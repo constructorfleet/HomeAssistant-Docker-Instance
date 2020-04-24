@@ -19,7 +19,7 @@ RUN if [ -z INSTALL_WEBSSOCK ]; then \
         pip3 install websockets websocket-client; \
     fi
 
-COPY ./wait_for_it.sh /.
+COPY ./wait_for_it.sh /
 
 ENTRYPOINT ["/init"]
 
