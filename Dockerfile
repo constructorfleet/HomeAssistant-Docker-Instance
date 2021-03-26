@@ -18,6 +18,8 @@ RUN if [ -z INSTALL_WEBSSOCK ]; then \
         apk add --no-cache openssl-dev libffi-dev; \
         pip3 install websockets websocket-client; \
     fi
+    
+RUN apk add awake
 
 COPY ./wait_for_it.sh /
 
