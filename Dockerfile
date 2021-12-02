@@ -19,7 +19,7 @@ RUN if [ -z INSTALL_WEBSSOCK ]; then \
         pip3 install websockets websocket-client; \
     fi
     
-RUN apk add awake
+RUN apk add awake py3-cffi libffi
 
 COPY ./wait_for_it.sh /
 
